@@ -57,6 +57,10 @@ in
       # contains fix to poetry package on macos
       package = pkgs-poetry.poetry;
     };
+    manylinux = {
+      # https://github.com/cachix/nixpkgs-python/issues/44
+      enable = false;
+    };
   };
 
 }
